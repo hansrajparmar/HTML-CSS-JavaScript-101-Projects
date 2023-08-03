@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-color: red;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: yellow;
+}
+
+.grey-heart{
+    background: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+.grey-heart:before,.grey-heart:after{
+    content: "";
+    background: #ccc;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+}
+
+.grey-heart:before{
+    top: -50px;
+    left: 0;
+}
+
+.grey-heart:after{
+    left: 50px;
+    top: 0;
+}
+
+.red-heart{
+    background: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    transform: rotate(-45deg);
+    position: absolute;
+    visibility: hidden;
+}
+
+
+.red-heart:before, 
+.red-heart:after{
+    content: "";
+    background: var(--main-color);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.red-heart:before{
+    top: -50px;
+    left: 0;
+}
+
+.red-heart:after{
+    left: 50px;
+    top: 0;
+}
+
+.red-heart.animation{
+    animation: pop 0.9s linear;
+    visibility: visible;
+}
+
+.red-heart.fill-color{
+    background: var(--main-color);
+}
+
+
+@keyframes pop{
+    100%{
+        transform: scale(2) rotate(-45deg);
+        opacity: 0;
+    }
+}
