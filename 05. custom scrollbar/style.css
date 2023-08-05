@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  html,body {
+    height: fit-content;
+    width: 100%;
+    background: #ff7c3f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card {
+    width: 45vw;
+    background: #FFF6DC;
+    padding: 20px;
+    margin: 20px;
+    line-height: 28px;
+    border-radius: 20px;
+  }
+  
+  /* Scrollbar */
+  ::-webkit-scrollbar {
+    /* background-color: red; */
+    width: 15px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #FFF6DC;
+    border-radius: 100px;
+  }
