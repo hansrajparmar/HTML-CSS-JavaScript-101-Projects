@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,body{
+  height: 100%;
+  width: 100%;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #486a45;
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #F7FFE5;
+  border: 4px solid #F7FFE5;
+  padding: 2rem 5rem;
+  position: relative;
+  overflow: hidden;
+  transition: all 1s;
+  border-radius: 15px;
+
+}
+
+a:before {
+  content: "WELCOME";
+  font-weight: bold;
+  color: #000;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #F7FFE5;
+  transform: translateY(100%);
+  transition: all 0.8s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a:hover:before {
+  transform: translateY(0);
+}
