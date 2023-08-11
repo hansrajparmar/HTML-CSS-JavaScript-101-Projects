@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@300;400&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    background-color: #AACB73;
+  }
+
+  h1{
+    font-family: Handjet;
+    font-weight: 300;
+    font-size: 6vw;
+  }
+  
+  .Container {
+    position: relative;
+    width: 700px;
+    overflow: hidden;
+    height: 420px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    /* background-color: red; */
+  }
+  
+  .pic-container {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+
+  img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 20px;
+    opacity: 0.5;
+    cursor: pointer;
+  }
+  
+  .btn.prev {
+    left: 10px;
+  }
+  
+  .btn.next {
+    right: 10px;
+  }
+  
+  .btn:hover {
+    opacity: 1;
+  }
+
+  @media screen and (max-width:550px) {
+    .Container{
+      width: 90vw;
+      height: fit-content;
+    }
+    h1{
+      font-size: 10vw;
+    }
+  }
