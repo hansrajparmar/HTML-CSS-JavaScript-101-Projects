@@ -33,10 +33,10 @@ body {
     padding-left: 10px;
     padding-right: 0px;
     top: 0px;
-    height: 58px;
-    width: 50px;
+    height: 59px;
+    width: 60px;
     transition: width 0.3s ease;
-    border-radius: 10px;
+    border-radius: 50px;
     /* background-color: blue; */
 }
 
@@ -53,7 +53,7 @@ body {
     width: 65px;
     transition: transform 0.3s ease;
     margin-right: 0px;
-    border-radius: 10px;
+    border-radius: 50%;
 
 }
 
