@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #041C32;
+}
+
+
+.Loader{
+    border: 0px solid #ddd;
+    height: 50px;
+    line-height: 50px;
+    font-size: 45px;
+    text-transform: uppercase;
+    overflow: hidden;
+    /* background-color: yellow; */
+  }
+  
+  .Loader span {
+    position: relative;
+    color: white;
+    animation: animation 4s ease infinite;
+  }
+
+  h1{
+    color: #ECB365;
+    margin-top: 20px;
+  }
+
+
+  @keyframes animation{
+    10%{
+        top: -50px;
+    }
+    20%{
+        top: -100px;
+    }
+    30%{
+        top: -150px;
+    }
+    40%{
+        top: -200px;
+    }
+    50%{
+        top: -250px;
+    }
+  }
