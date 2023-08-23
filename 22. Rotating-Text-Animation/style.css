@@ -63,3 +63,17 @@ html,body{
 
   
   }
+
+
+  @media screen and (max-width:550px) {
+    .main{
+      width: 100vw;
+    }
+
+    h1{
+      font-size: 7vw;
+    }
+
+    
+    
+  }
