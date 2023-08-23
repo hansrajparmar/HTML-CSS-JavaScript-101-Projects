@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html{
+    height: 100%;
+    width: 100%;
+  }
+  
+  body {
+    height: 100%;
+    width: 100%;
+    background: rgb(14, 14, 29);
+  }
+
+  .container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .btn {
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    border: 2px solid white;
+    border-radius: 50%;
+    box-shadow:  1px 1px 12px rgb(151, 151, 151);
+    width: 120px;
+    height: 120px;
+    margin: 10px;
+    text-transform: capitalize;
+    /* background-color: yellowgreen; */
+  }
+  
+  .pink {
+    background-color: rgb(255, 138, 158);
+  }
+  
+  
+  .royalblue {
+    background-color: royalblue;
+  }
+  
+  .goldenrod {
+    background-color: goldenrod;
+  }
+  
+ 
+  .tomato {
+    background-color: rgb(255, 77, 46);
+  }
+
+  
+  @media screen and (max-width:550px) {
+
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 20vw;
+        /* background-color: red; */
+    }
+
+    .btn{
+        /* background-color: yellow; */
+        padding: 0;
+        margin: 10px;
+    }
+    
+  }
