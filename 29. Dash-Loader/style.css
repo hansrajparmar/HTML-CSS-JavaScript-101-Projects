@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #94A684;
+}
+
+.Loader:before {
+    content:"Loading...";
+  }
+
+.Loader {
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 30px;
+    padding:0 5px 8px 0;
+    background:repeating-linear-gradient(90deg,currentColor 0 8%,#0000 0 10%) 200% 100%/200% 3px no-repeat;
+    animation:c3 2s steps(6) infinite;
+    /* background-color: yellow; */
+    width: fit-content;
+    color: #FFEEF4;
+  }
+  @keyframes c3 {to{background-position: 80% 100%}}
