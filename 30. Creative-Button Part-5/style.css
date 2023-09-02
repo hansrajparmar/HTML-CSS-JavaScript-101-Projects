@@ -21,7 +21,6 @@ html,body{
 .btn {
     border: none;
     padding: 1rem 4rem;
-    /* background: rgba(17, 17, 137, 0.824); */
     background: #191D88;
     color: #fff;
     font-size: 22px;
@@ -37,15 +36,14 @@ html,body{
     height: 24px;
     top: -10px;
     left: -10px;
-    /* background: teal; */
     border-top: 4px solid #191D88;
     border-left: 4px solid #191D88;
     transition: all 0.25s;
 }
   
 .btn:hover:before,.btn:hover:after {
-    height: 100%;
-    width: 100%;
+    height: 125%;
+    width: 155%;
 }
   
 .btn:after {
@@ -58,4 +56,13 @@ html,body{
     border-bottom: 4px solid #191D88;
     border-right: 4px solid #191D88;
     transition: all 0.25s;
+}
+
+@media screen and (max-width:550px) {
+      
+    .btn:hover:before,.btn:hover:after {
+        height: 120%;
+        width: 125%;
+    }
+  
 }
