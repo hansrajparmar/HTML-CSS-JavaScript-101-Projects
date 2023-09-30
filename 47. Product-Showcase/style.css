@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+.content-image{
+    background-image: url(image/headset1.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 500px;
+    width: 1500px;
+    height: 600px;
+    transition: background-image 0.3s;
+    transform: translateX(0px);
+    animation: float 6s ease-out infinite;
+}
+
+@keyframes float{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-60px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 150px;
+    background-color: #92b3d5;
+    height: 100%;
+    width: 100%;
+}
+
+.content > h1{
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,50%);
+    letter-spacing: 5px;
+    color: #fff;
+}
+
+
+.image-select img{
+    width: 100px;
+    padding: 10px;
+}
+
+.image-select div{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.image-select div:hover{
+    transform: translateY(-10px);
+}
+
+
+
+@media screen and (max-width:550px) {
+    .content{
+        flex-direction: column;
+        padding: 0;
+
+    }
+    .image-select{
+        display: flex;
+    }
+    .content-image{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    h1{
+        display: none;
+    }
+}
