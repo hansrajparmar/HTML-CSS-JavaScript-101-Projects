@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s ease;
+}
+
+.img {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.left-arrow{
+  font-size: 30px;
+  padding: 20px;
+  position: absolute;
+  top: 45%;
+  left: 0;
+  cursor: pointer;
+  border: none;
+  border-radius: 50px;
+}
+
+.right-arrow{
+  font-size: 30px;
+  padding: 20px;
+  position: absolute;
+  top: 45%;
+  right: 0;
+  cursor: pointer;
+  border: none;
+  border-radius: 50px;
+}
+
+h1{
+    border-radius: 20px;
+    text-align: center;
+    width: 450px;
+    background-color: rgba(38, 38, 38, 0.218);
+    color: white;
+}
+
+
+/* JavaScript k through add kiya jayga y Animation  */
+.animateTransition {
+  animation: move 0.5s ease;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(5px);
+    filter: blur(4px);
+  }
+  50% {
+    transform: translateX(-5px);
+    filter: blur(2px);
+  }
+  100% {
+    transform: translateX(0);
+    filter: blur(0);
+  }
+}
+
+@media screen and (max-width:550px) {
+    h1{
+        font-size: 20px;
+    width: 250px;
+
+    }
+}
