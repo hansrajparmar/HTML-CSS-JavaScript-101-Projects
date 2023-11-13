@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  font-family: "Poppins" ,sans-serif;
+}
+
+html, body{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  background-color: rgb(255, 188, 200)  ;
+}
+
+h1{
+  font-size: 2.5vw;
+  color: rgb(163, 31, 55);
+}
+  
+.App {
+  text-align: center;
+  /* background-color: black; */
+  width: 400px;
+  border:  2px solid white;
+  border-radius: 20px;
+}
+  
+.buttons{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-auto-rows: minmax(80px, auto);
+}
+  
+.buttons button{
+  background-color: white;
+  color: black;
+  margin: 2px;
+  border-radius: 3px;
+  border: none;
+  box-shadow: 0.7px 0.7px 0.7px black;
+}
+
+.Clear{
+  grid-column: 1/span 2;
+  border-bottom-left-radius: 20px !important;
+}
+
+.Del{
+  grid-column: 3/span 2;
+  border-bottom-right-radius: 20px !important;
+}
+
+.guru{
+  background-color: #FFDFDF !important;
+}
+  
+.display{
+  border-top-left-radius: 20px ;
+  border-top-right-radius: 20px ;
+  border: none;
+  background-color: white;
+  color: black;
+  width: 100% ;
+  height: 110px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 650px) {
+  h1{
+    font-size: 7vw;
+  }
+}
