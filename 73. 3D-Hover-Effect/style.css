@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+html,body {
+     height: 100%;
+     width: 100%;
+     background: #907f62;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     gap: 120px;
+}
+
+h1{
+     letter-spacing: 8px;
+}
+
+main {
+     display: flex;
+     margin: 0;
+     padding: 0;
+     /* background-color: red; */
+}
+
+main li {
+     list-style: none;
+     margin: 0 40px;
+     /* background-color: yellow; */
+}
+
+main li a .fa {
+     font-size: 40px;
+     color: #262626;
+     line-height: 80px;
+     transition: .5s;
+     padding-right: 14px;
+     /* background-color: orange; */
+}
+
+img {
+     height: 50px;
+     color: #262626;
+     line-height: 80px;
+     transition: .5s;
+     padding-right: 14px;
+}
+
+main li a {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 70px;
+     height: 80px;
+     background: #cecaca;
+     text-align: center;
+     padding-left: 20px;
+     transform: rotate(318deg) skew(199deg) translate(0, 0);
+     transition: .5s;
+     box-shadow: -20px 20px 10px rgba(0, 0, 0, .5);
+     /* background-color: green; */
+     text-decoration: none;
+}
+
+main li a:before {
+     content: '';
+     position: absolute;
+     top: 10px;
+     left: -20px;
+     height: 100%;
+     width: 20px;
+     background: #756060;
+     transform: .5s;
+     transform: rotate(0deg) skewY(-45deg);
+     /* background-color: violet;  */
+}
+
+main li a:after {
+     content: '';
+     position: absolute;
+     bottom: -20px;
+     left: -10px;
+     height: 20px;
+     width: 100%;
+     background: #816969;
+     transform: .5s;
+     transform: rotate(0deg) skewX(-45deg);
+}
+
+main li a:hover {
+     transform: skew(5deg) translate(20px, -50px);
+     box-shadow: -50px 80px 50px rgba(0, 0, 0, .5);
+     
+}
+
+main li:hover .fa {
+     color: #fff;
+}
+
+
+
+main li:hover:nth-child(1) a:before {
+     background: #ffe1aa;
+}
+
+main li:hover:nth-child(1) a:after {
+     background: #B7A074;
+}
+
+main li:hover:nth-child(2) a:before {
+     background: #ffe1aa;
+}
+
+main li:hover:nth-child(2) a:after {
+     background: #B7A074;
+}
+
+main li:hover:nth-child(3) a:before {
+     background: #ffe1aa;
+}
+
+main li:hover:nth-child(3) a:after {
+     background: #B7A074;
+}
