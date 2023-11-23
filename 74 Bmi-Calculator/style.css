@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins";
+}
+
+html,body{
+	text-align: center;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 40px;
+	background-color: #b2ce98;
+}
+
+#guru{
+	width: 500px;
+	height: 50%;
+	background-color: #FEFAE0;
+	border-radius: 30px;
+	box-shadow: 1px 1px 20px #605f54;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 10px;
+}
+
+
+h1{
+	font-size: 4vw;
+	font-weight: 600;
+	color: #543618;
+}
+
+#w,#h{
+	color:#875d0f;
+	text-align: center;
+	font-size: 20px;	
+	outline: none;
+	border:none;
+	background: none;
+	border-bottom: 1px solid #566d41;
+	width: 200px;
+}
+
+#w:focus,#h:focus{
+	border-bottom: 2px solid #B99470;
+	width: 220px;
+	transition: .5s;
+}
+
+#result{
+	color:#51371d;
+}
+
+#btn{
+	margin-top: 50px;
+	border:none;
+	color: #fff;
+	background-color: #B99470;
+	width: 150px;
+	padding: 10px;
+	border-radius: 30px;
+	outline: none;
+	cursor: pointer;
+}
+
+#btn:hover{
+	box-shadow: 1px 1px 10px  #B99470; 
+
+}
+
+#info{
+	font-size: 13px;
+	
+}
+
+
+
+@media screen and (max-width:600px) {
+	#guru{
+		width: 80%;
+	}
+
+	h1{
+		font-size: 7vw;
+	}
+}
