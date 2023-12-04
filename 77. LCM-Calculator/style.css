@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container, .box, .property, form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+button, input[type="submit"]{
+    cursor: pointer;
+}
+
+button{
+    width: 50vw;
+    height: 10vh;
+    margin-top: 2vh;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background-color: #224425;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.box{
+    border-radius: 10px;
+    width: 50vw;
+    background-color: #224425;
+    color: #fff;
+    margin-top: 10px;
+}
+
+form{
+    margin-top: 5vh;
+}
+
+input{
+    height: 7vh;
+    outline: none;
+    border: none;
+}
+
+input[type="number"]{
+    width: 20vw;
+    margin-left: 1px;
+}
+
+input[type="submit"]{
+    background-color:#B0D9B1;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    margin-top: 1vh;
+    width: 40vw;
+}
+
+.property{
+    width: 60vw;
+    justify-content: space-evenly;
+    margin: 3vh;
+    
+}
+
+.property > div{
+    width: 16vw;
+    background: #224425;
+    box-shadow: inset 5px 5px 10px #0c0c0c, inset -5px -5px 10px #303030;
+    padding: 1vh 1vw;
+    opacity: 0.5;
+}
+
+.result{
+    margin-bottom: 5vh;
+}
+
+@media all and (max-width:500px){
+    button, .box{
+        width: 90vw;
+    }
+
+    input[type="number"]{
+        width: 40vw;
+    }
+
+    input[type="submit"]{
+        width: 80vw;
+    }
+
+    .property > div{
+        width: 32vw;
+    }
+}
