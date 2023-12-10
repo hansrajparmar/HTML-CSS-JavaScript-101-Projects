@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+html,
+body{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+  gap: 90px;
+  background-color: #032030;
+}
+
+h1{
+  position: absolute;
+  top: 15%;
+  font-size: 60px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.item {
+  margin: 2px;
+}
+
+.item-small {
+  width: 20px;
+  height: 20px;
+  background: #C5FFF8;
+  border-radius: 50%;
+}
+
+.item-medium {
+  width: 32px;
+  height: 32px;
+  background: #96EFFF;
+  border-radius: 50%;
+}
+
+.item-large {
+  width: 58px;
+  height: 58px;
+  background: #5FBDFF;
+  border-radius: 50%;
+}
+
+
+.item-xtralarge {
+  width: 90px;
+  height: 90px;
+  background: #7B66FF;
+  border-radius: 50%;
+}
+
+.item-group {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  margin: 10px 10px 30px 10px;
+  color: white;
+}
+
+.item-group::after {
+  content: attr(data-name);
+  position: relative;
+  position: relative;
+  top: 40px;
+  display: block;
+  margin-left: -50%;
+}
+
+#collection {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  /* background-color: yellow; */
+}
+
+#filter-bar {
+  display: flex;
+  align-items: baseline;
+}
+
+#filter li {
+  list-style: none;
+  display: inline-block;
+  cursor: default;
+  padding: 5px 10px;
+  cursor: pointer;
+  color: white;
+  /* background-color: red; */
+}
+
+.selected-filter-all #filter-all,
+.selected-filter-small #filter-small,
+.selected-filter-medium #filter-medium,
+.selected-filter-large #filter-large,
+.selected-filter-xtralarge #filter-xtralarge {
+  border-radius: 10px;
+  background: rgba(0,0,0,0.1);
+  color: #439bff;
+  cursor: pointer;
+}
+
+.item {
+  display: none;
+}
+
+.selected-filter-all .item,
+.selected-filter-small .item-small,
+.selected-filter-medium .item-medium,
+.selected-filter-large .item-large,
+.selected-filter-xtralarge .item-xtralarge {
+  display: block;
+}
