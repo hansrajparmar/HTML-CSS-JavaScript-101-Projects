@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+html,body{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #120035;
+  gap: 50px;
+}
+
+h1{
+  color: white;
+  text-transform: uppercase;
+  font-size: 50px;
+}
+
+input {
+  line-height: 2em;
+  margin-left: 40px;
+  border-radius: 3px;
+  border: 1px solid #999;
+  padding: 10px 20px;
+}
+
+.item {
+  margin: 14px;
+}
+
+.item-large {
+  width: 64px;
+  height: 64px;
+  border-radius: 10px;
+  background: #7b0096;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-group {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  margin: 10px 10px 30px 10px;
+  color: #f3bc56;
+}
+
+.item-group::after {
+  content: attr(data-name);
+  position: relative;
+  position: relative;
+  top: 20px;
+  display: block;
+  margin-left: -50%;
+  /* background-color: red; */
+}
+
+#collection {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  /* background-color: red; */
+}
+
+.selected-filter-all .item,
+.selected-filter-small .item-small,
+.selected-filter-medium .item-medium,
+.selected-filter-large .item-large {
+  display: block;
+}
+
+i{
+  font-size: 60px;
+  color: white;
+}
