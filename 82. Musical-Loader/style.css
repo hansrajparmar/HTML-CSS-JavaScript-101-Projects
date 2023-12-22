@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+html{
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+  height: 100%;
+  width: 100%;
+  gap: 80px;
+  background-color: #24233d;
+}
+
+h1{
+  color: #e3eaf7;
+}
+
+.gurucodes {
+  display: flex;
+}
+
+.guruBar {
+  width: 6px;
+  height: 40px;
+  margin: 0 4px;
+  background-color: #edddc2;
+  border-radius: 4px;
+  animation: loader 1s ease-in-out infinite;
+}
+.guruBar:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.guruBar:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.guruBar:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.guruBar:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+.guruBar:nth-child(5) {
+  animation-delay: 0.4s;
+}
+
+.guruBar:nth-child(6) {
+  animation-delay: 0.5s;
+}
+
+.guruBar:nth-child(7) {
+  animation-delay: 0.6s;
+}
+
+.guruBar:nth-child(8) {
+  animation-delay: 0.7s;
+}
+
+
+@keyframes loader {
+  0% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(1, 2.5);
+  }
+  40% {
+    transform: scale(1);
+  }
+}
