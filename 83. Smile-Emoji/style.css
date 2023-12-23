@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+*{
+  font-family: "Poppins";
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+  height: 100%;
+  width: 100%;
+  background-color: #1c8f67;
+}
+
+h1{
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 50px;
+}
+
+.smile-face {
+  position: relative;
+  width: 420px;
+  height: 420px;
+  border: 2px solid white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.eyes {
+  position: relative;
+  top: -40px;
+  display: flex;
+}
+
+.eyes .eye {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  display: block;
+  background: white;
+  border-radius: 50%;
+  margin: 0 15px;
+}
+
+.eyes .eye::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 25px;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: black;
+}
+
+hr{
+  width: 5px;
+  height: 100px;
+  background-color: white;
+  border: none;
+  border-radius: 20px;
+}
+
+hr:hover{
+  transform: scale(1.5);
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.box {
+  width: 80px;
+  height: 20px;
+  margin-top: 40px;
+  border: solid 5px #fff;
+  border-color: transparent transparent #fff transparent;
+  border-radius: 0 0 240px 50%/60px;
+}
