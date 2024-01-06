@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+html,body{
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #355452;
+  gap: 150px;
+}
+
+h1{
+  text-transform: uppercase;
+  font-size: 5vw;
+  text-decoration: underline;
+  color: white;
+}
+
+.gurucodes {
+  text-align: center;
+}
+
+.guru-container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 30px;
+  max-width: 100%;
+  width: 350px;
+}
+
+.guru-container::before {
+  content: "";
+  background-color:#e0e0e0;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 4px;
+  width: 100%;
+  z-index: -1;
+}
+
+.guru {
+  background-color: #a59a01;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 4px;
+  width: 0%;
+  z-index: -1;
+  transition: 0.4s ease;
+}
+
+.circle {
+  background-color: #fff;
+  color: #1c1c1c;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid#e0e0e0;
+  transition: 0.4s ease;
+}
+
+.circle.active {
+  border-color: #a59a01;
+}
+
+.btn {
+  background-color: #a59a01;
+  color: #fff;
+  border: 0;
+  font-family: inherit;
+  padding: 8px 30px;
+  margin: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn:disabled {
+  background-color:#e0e0e0;
+  cursor: not-allowed;
+}
+
+
+@media (max-width: 600px) {
+  h1{
+    font-size: 7vw;
+  }
+} 
