@@ -2,7 +2,7 @@ const input = document.getElementById("inp");
 const qrcodeContainer = document.getElementById("qrcode-container");
 const qrimg = document.getElementById("qrimg");
 const btn = document.getElementById("btn");
- 
+
 btn.addEventListener("click", () => {
   if (input.value) {
     qrimg.setAttribute(
