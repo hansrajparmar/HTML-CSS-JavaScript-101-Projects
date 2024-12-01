@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Russo One";
 }
 html{
   height: 100%;
@@ -9,6 +12,7 @@ html{
 }
 
 body {
+  width: 100%;
   height: 100%;
   background: #EAC696;
   display: flex;
@@ -24,16 +28,14 @@ body {
 
 h1 {
   color: #000;
-  font-size: 7vw;
-  font-family: "Playfair Display SC", serif;
+  font-size: 4vw;
 }
 
 p {
   color: #000;
   width: 100%;
-  font-family: sans-serif;
   letter-spacing: 2px;
-  font-size: 1.7vw;
+  font-size: 1.5vw;
   text-align: center;
   margin-top: 20px;
 }
@@ -51,7 +53,6 @@ button {
   cursor: pointer;
 }
 
-/* JavaScript */
 div.cursor {
   position: absolute;
   top: 50%;

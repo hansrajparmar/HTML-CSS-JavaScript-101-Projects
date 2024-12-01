@@ -15,7 +15,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    background: #f1f5f8;
+    background-color: orange;
     line-height: 2.2;
     font-size: 0.875rem;
   }
@@ -26,6 +26,7 @@ body {
   
   a {
     text-decoration: none;
+    color: orange;
   }
   
   nav {
@@ -46,7 +47,6 @@ body {
   }
   
   .menu a {
-    color: grey;
     letter-spacing: 0.1rem;
     display: block;
     padding: 0.5rem 1rem;
@@ -78,7 +78,6 @@ body {
 
   .nav-header img{
     width: 50px;
-    /* background-color: red; */
   }
   
   @media (min-width: 800px) {

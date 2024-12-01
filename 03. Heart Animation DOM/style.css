@@ -13,7 +13,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #6f6f6f;
+    background-color: black;
   }
   
   /* gray-heart */
@@ -27,6 +27,7 @@
     position: relative;
     top: 0;
     transform: rotate(-45deg);
+    cursor: pointer;
   }
   
   .gray-heart:before,
@@ -37,6 +38,7 @@
     height: 100px;
     width: 100px;
     position: absolute;
+    cursor: pointer;
   }
   
   .gray-heart:before {
@@ -60,6 +62,7 @@
     transform: rotate(-45deg);
     position: absolute;
     visibility: hidden;
+    cursor: pointer;
   }
   
   .red-heart:before,
